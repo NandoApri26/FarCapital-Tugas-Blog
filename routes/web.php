@@ -36,3 +36,9 @@ Route::patch('/Product/{product}', [ProductController::class, 'update']);
 
 // Route Article
 Route::get('/Article', [ArticleController::class, 'index']);
+Route::get('/Article/create', [ArticleController::class, 'create']);
+Route::post('/Article', [ArticleController::class, 'store']);
+Route::delete('/Article/{article}', [ArticleController::class, 'destroy']);
+Route::get('/Article/{article}/edit', [ArticleController::class, 'edit']);
+Route::get('/Article/{article}/detail', [ArticleController::class, 'show']);
+Route::get('/Article/{article}', [ArticleController::class, 'update']);
