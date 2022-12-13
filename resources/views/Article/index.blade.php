@@ -41,13 +41,13 @@
                             {{$loop->iteration}}
                         </th>
                         <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {{$item->judul_article}}
+                            {{(strlen($item->judul_article) > 5) ? substr ($item ->judul_article, 0, 15). "..." : $item ->sub_description}}
                         </th>
                         <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {{(strlen($item->sub_description) > 5) ? substr ($item ->sub_description, 0, 35). "..." : $item ->sub_description}}
+                            {{(strlen($item->sub_description) > 5) ? substr ($item ->sub_description, 0, 15). "..." : $item ->sub_description}}
                         </th>
                         <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {{(strlen($item->description) > 5) ? substr ($item ->description, 0, 35). "..." : $item ->description}}
+                            {{(strlen($item->description) > 5) ? substr ($item ->description, 0, 15). "..." : $item ->description}}
                         </th>
                         <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             {{$item->tanggal}}

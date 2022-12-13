@@ -23,6 +23,7 @@ use App\Models\Article;
 // });
 
 Route::get('/Home', [HomeController::class, 'index']);
+Route::get('/Home/article', [HomeController::class, 'article']);
 
 
 // Route Product

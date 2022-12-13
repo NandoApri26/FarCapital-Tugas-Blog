@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Article;
 
 class HomeController extends Controller
 {
@@ -16,6 +17,13 @@ class HomeController extends Controller
     {
         $product = Product::all();
         return view('Home.index', compact('product'));
+    }
+
+    // Article
+    public function article()
+    {
+        $article = Article::all();
+        return view('Home.article', compact('article'));
     }
 
     /**
