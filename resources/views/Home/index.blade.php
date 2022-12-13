@@ -8,7 +8,7 @@
     <div class=" py-20">
         <div class="max-w-sm mt-10 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img class="rounded-t-lg" src="{{asset('img/' . $item->product_image)}}" alt="" />
+                <img class="rounded-t-lg w-full h-56 object-cover" src="{{asset('img/' . $item->product_image)}}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">

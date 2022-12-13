@@ -6,9 +6,9 @@
 <div class="flex container flex-wrap gap-14">
     @foreach ($article as $item)
     <div class=" pt-4">
-        <div class="max-w-sm mt-8 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm mt-8 h- bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
             <a href="#">
-                <img class="rounded-t-lg" src="{{asset('img-article/' . $item->image_article)}}" alt="" />
+                <img class="rounded-t-lg w-full h-56 object-cover" src="{{asset('img-article/' . $item->image_article)}}" alt="" />
             </a>
             <div class="p-5">
                 <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">
