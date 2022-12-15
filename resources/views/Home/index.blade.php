@@ -6,9 +6,9 @@
 <div class="flex container flex-wrap gap-14">
     @foreach ($product as $item)
     <div class=" py-20">
-        <div class="max-w-sm mt-10 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm mt-10 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:delay-150 hover:scale-110 transition-all duration-500">
             <a href="#">
-                <img class="rounded-t-lg w-full h-56 object-cover" src="{{asset('img/' . $item->product_image)}}" alt="" />
+                <img class="rounded-t-lg w-96 h-64 object-cover " src="{{asset('img/' . $item->product_image)}}" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -19,7 +19,7 @@
                 <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">
                     {{ $item -> product_stock }}
                 </p>
-                <h6 class="mb-2 font-normal text-gray-700 dark:text-gray-400">
+                <h6 class="mb-2 font-semibold text-gray-700 dark:text-gray-400">
                     Rp. {{ $item -> product_price }}
                 </h6>
                 <p class="mb-2 font-normal text-gray-700 dark:text-gray-400">

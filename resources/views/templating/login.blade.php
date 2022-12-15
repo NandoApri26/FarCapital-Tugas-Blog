@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="container">
-        @include('templating.navbar')
+        {{-- @include('templating.navbar') --}}
         @yield('content')
     <script src="{{ asset('./node_modules/flowbite/dist/flowbite.js')}}"></script>
     </div>
